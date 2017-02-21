@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
 
   # GET /contacts/1
   def show
-    render json: @contact
+    render json: @contact #, include: :kind
   end
 
   # POST /contacts
@@ -46,6 +46,6 @@ class ContactsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def contact_params
-      params.require(:contact).permit(:name, :email, :birthdate)
+      params.require(:contact).permit(:name, :email, :birthdate, :kind_id)
     end
 end
