@@ -5,7 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 # Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff
@@ -18,10 +17,11 @@ gem 'puma', '~> 3.0'
 gem 'jwt'
 # Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth.
 gem 'devise_token_auth'
+# Translations for the devise gem
 gem 'devise-i18n'
-
-
+# Manage Procfile-based applications
 gem 'foreman'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production

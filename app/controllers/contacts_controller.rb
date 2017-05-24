@@ -3,8 +3,6 @@ class ContactsController < ApplicationController
 
   # GET /contacts
   def index
-    @contacts = Contact.all
-
     render json: @contacts #, methods: :birthdate_br #[:hello, :i18n]
   end
 
